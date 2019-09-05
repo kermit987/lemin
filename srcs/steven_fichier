@@ -1,0 +1,4 @@
+-Pas besoin de pointeur dans la fonction "new_list"
+-Dans la commande creat_room: pas besoin d'initializer *room et link_room
+(pas besoin de pointeur)
+-Dans la fonciton creat_room-> a quoi sert la static "id" ?

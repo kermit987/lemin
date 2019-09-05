@@ -1,0 +1,24 @@
+--- ALGO ---
+Pour chaque fourmie
+{
+     consruire un arbre de possibilité des salle et de leurs liaisons (en evitant de lier les salle déja rencontrées)
+     |______le poid de chaqu'une des branches représente le prochain tour où la salle visé est libre (donc minimum un pour "le trour prochain")
+     en déduir le chemin le plus cours pour cette fourmie et l'ajouté
+}
+afficher le chemin tour par tour de chaque fourmie
+
+--- CONSTRUIRE L'ARBRE ---
+allouer une structure d'arbre et l'initialiser avec la salle actuelle
+Pour chaque branche (salles accéssibles depuis l'actuelle éxépté les salle déja rencontrées)
+{
+	allouer uns structure branche en choisissant 
+	initialiser le poids de la branche au prochain tour libre (donc minimum un pour "le trour prochain")
+	rapeler la même fonction avec cette la salle choisit
+}
+retourner la structure arbre
+
+--- DEDUIRE LE CHEMIN LE PLUS COURS ----
+ajouter la salle de l'arbre au tour actuel à la case du chemin de la fourmie correspondant au tour
+identifier la branche la plus légère et rapeler la même fonction avec cette fois l'arbre visé par cette branche
+retourner le poids de la plus légère des branches
+
